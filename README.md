@@ -1,27 +1,99 @@
-# AngularSortableTable
+# Angular Sortable, Paginated, Searchable, and Responsive Table
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 17.3.5.
+This project is a simple Angular application that features a sortable, paginated, and searchable table. The table is also responsive and styled using Tailwind CSS. The data is fetched from a public RESTful API (JSONPlaceholder).
 
-## Development server
+## Features
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+- **Sortable Columns**: Click on the column headers to sort the data.
+- **Pagination**: Navigate through pages of data.
+- **Search**: Filter the data using the search box.
+- **Responsive Design**: The table is designed to be responsive and visually appealing.
 
-## Code scaffolding
+## Technologies Used
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+- Angular
+- Angular Material
+- Tailwind CSS
+- JSONPlaceholder API
 
-## Build
+## Getting Started
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+### Prerequisites
 
-## Running unit tests
+- Node.js
+- Angular CLI
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+### Installation
 
-## Running end-to-end tests
+1. Clone the repository:
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+   ```bash
+   git clone https://github.com/blingyplus/angular-sortable-table.git
+   cd angular-sortable-table
+   ```
 
-## Further help
+2. Install the dependencies:
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+   ```bash
+   npm install
+   ```
+
+3. Start the development server:
+
+   ```bash
+   ng serve
+   ```
+
+4. Open your browser and navigate to `http://localhost:4200`.
+
+## Usage
+
+### Sorting
+
+Click on the column headers to sort the data in ascending or descending order.
+
+### Pagination
+
+Use the paginator at the bottom of the table to navigate through pages of data. The page size options are dynamically calculated based on the total number of records.
+
+### Search
+
+Type in the search box to filter the data. The table updates in real-time as you type.
+
+## Project Structure
+
+- `src/`
+  - `app/`
+    - `sortable-table/`
+      - `sortable-table.component.html` - The HTML template for the table component.
+      - `sortable-table.component.ts` - The TypeScript logic for the table component.
+      - `sortable-table.component.scss` - The SCSS styles for the table component.
+    - `app.component.html` - The root component template.
+    - `app.component.ts` - The root component logic.
+    - `app.module.ts` - The main application module.
+  - `assets/` - Static assets for the project.
+  - `environments/` - Environment configuration.
+
+## Tailwind CSS Configuration
+
+Tailwind CSS is configured in the `tailwind.config.js` and included in the `styles.scss`.
+
+```javascript
+// tailwind.config.js
+module.exports = {
+  content: [
+    "./src/**/*.{html,ts}",
+  ],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+}
+```
+
+```scss
+// styles.scss
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+```
