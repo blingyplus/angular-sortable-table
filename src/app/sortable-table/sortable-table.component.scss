@@ -1,0 +1,30 @@
+.table-container {
+  padding: 20px;
+}
+
+.table-responsive {
+  max-width: 100%;
+  overflow-x: auto;
+}
+
+mat-form-field.filter {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+table {
+  width: 100%;
+}
+
+th {
+  cursor: pointer;
+  background-color: #f8f9fa;
+
+  &:hover {
+    background-color: #e9ecef;
+  }
+}
+
+mat-paginator {
+  margin-top: 20px;
+}
