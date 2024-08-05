@@ -1,8 +1,16 @@
-<div class="table-container p-4 flex flex-col items-center">
-  <div class="w-full max-w-4xl">
-    <div
-      class="table-responsive overflow-x-auto bg-white p-4 rounded-lg shadow-md"
-    >
+<div class="flex justify-center p-4">
+  <div class="w-full bg-white rounded-lg shadow-md p-4">
+    <div class="flex justify-between items-center mb-4">
+      <h2 class="text-xl font-semibold text-center w-full">Users List</h2>
+    </div>
+    <div class="flex justify-end mb-4">
+      <input
+        (keyup)="applyFilter($event)"
+        placeholder="Search"
+        class="w-full max-w-xs p-3 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+      />
+    </div>
+    <div class="overflow-x-auto">
       <table mat-table [dataSource]="dataSource" class="min-w-full bg-white">
         <ng-container matColumnDef="name">
           <th
