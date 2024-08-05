@@ -70,7 +70,6 @@ Type in the search box to filter the data. The table updates in real-time as you
       - `sortable-table.component.scss` - The SCSS styles for the table component.
     - `app.component.html` - The root component template.
     - `app.component.ts` - The root component logic.
-    - `app.module.ts` - The main application module.
   - `assets/` - Static assets for the project.
   - `environments/` - Environment configuration.
 
